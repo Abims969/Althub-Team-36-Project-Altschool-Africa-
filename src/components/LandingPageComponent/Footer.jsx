@@ -1,5 +1,6 @@
-import styles from "../style.module.css";
-import image11 from "../assets/images/Frame 52.png";
+import styles from '../../styles/style.module.css';
+import React from "react";
+import image11 from "../../assets/images/Frame 52.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 

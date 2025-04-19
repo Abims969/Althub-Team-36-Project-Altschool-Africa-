@@ -1,7 +1,16 @@
-import styles from "../style.module.css";
-import image2 from "../assets/images/noto-v1_bus.png";
+import styles from '../../styles/style.module.css';
+import image2 from "../../assets/images/noto-v1_bus.png";
+import { useNavigate } from "react-router-dom";
 
 function SectionOne() {
+
+  const navigate=useNavigate();
+
+  // Function to handle navigation
+    const handleNavigation = (target) => {
+      navigate('/loading', { state: { target } });
+    };
+
   return (
     <div className={styles.sectionone}>
         
@@ -14,7 +23,7 @@ function SectionOne() {
         of options for a more seamless experience.
       </p>
       </div>
-        <button className={styles.btnone}>Get Started</button>
+        <button className={styles.btnone} onClick={() => handleNavigation('/signup')}>Get Started</button>
         </div>
         
         <div className={styles.rightdiv}>

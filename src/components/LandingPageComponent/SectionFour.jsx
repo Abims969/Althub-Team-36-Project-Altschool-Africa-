@@ -1,7 +1,7 @@
-import styles from "../style.module.css";
-import image8 from "../assets/images/TransitPro Splash.png";
-import image9 from "../assets/images/image 1.png";
-import image10 from "../assets/images/image 2.png";
+import styles from '../../styles/style.module.css';
+import image8 from "../../assets/images/TransitPro Splash.png";
+import image9 from "../../assets/images/image 1.png";
+import image10 from "../../assets/images/image 2.png";
 
 function SectionFour() {
   return (

@@ -1,5 +1,5 @@
-import styles from "../style.module.css";
-import image3 from "../assets/images/Frame 34.png";
+import styles from '../../styles/style.module.css';
+import image3 from "../../assets/images/Frame 34.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faBusSimple, faVanShuttle, faLocationDot, } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,19 +1,28 @@
-import Header from './components/Header'
-import SectionOne from './components/SectionOne'
-import SectionTwo from './components/SectionTwo'
-import SectionThree from './components/SectionThree' 
-import SectionFour from './components/SectionFour'
-import Footer from './components/Footer'
+import React from 'react';
+import LandingPage from './Pages/LandingPage';
+import SignUpOne from './components/LandingPageComponent/OnboardingScreens/SignUpOne';
+import { Routes, Route } from "react-router-dom";
+import SignUpTwo from './components/LandingPageComponent/OnboardingScreens/SignUpTwo';
+import CompletionLogin from './components/LandingPageComponent/OnboardingScreens/CompletionLogin';
+import SplashScreen from './components/LandingPageComponent/OnboardingScreens/SplashScreen';
+import { useState } from 'react';
+import LoginOne from './components/LandingPageComponent/OnboardingScreens/LoginOne';
+import ForgotPassword from './components/LandingPageComponent/OnboardingScreens/ForgotPassword';
+
 
 function App() {
+
+
   return(
     <div>
-      <Header />
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <Footer />
+     <Routes>
+     <Route path="/" element={<LandingPage />} />
+  <Route path="/loading" element={<SplashScreen />} />
+  <Route path="/signup" element={<SignUpOne />} />
+  <Route path="/login" element={<LoginOne />} />
+  <Route path="/onboarding" element={<SignUpTwo />} />
+  <Route path="/forgotpassword" element={<ForgotPassword />} />
+    </Routes>
     </div>
   )
 }

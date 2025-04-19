@@ -1,8 +1,8 @@
-import styles from "../style.module.css";
-import image4 from "../assets/images/Highlight 25.png";
-import image5 from "../assets/images/Highlight 11.png";
-import image6 from "../assets/images/Highlight 17.png";
-import image7 from "../assets/images/Highlight 18.png";
+import styles from '../../styles/style.module.css';
+import image4 from "../../assets/images/Highlight 25.png";
+import image5 from "../../assets/images/Highlight 11.png";
+import image6 from "../../assets/images/Highlight 17.png";
+import image7 from "../../assets/images/Highlight 18.png";
 
 function SectionThree() {
   return (

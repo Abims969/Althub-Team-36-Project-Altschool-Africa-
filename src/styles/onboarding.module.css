@@ -1,0 +1,64 @@
+/* SplashScreen */
+
+/* .splashscreencontainer {
+    margin: auto;
+} */
+
+.splashscreen img {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px; */
+    margin: 0 auto;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin-top: 5rem;
+}
+
+.busfootersplashscreenone {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100px;
+}
+
+.busfootersplashscreentwo img {
+    margin-top: 10rem;
+    width: 150px;
+    height: 150px;
+}
+
+/* LoginOne */
+
+.checkboxcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .checkboxcontainer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: -10px; adds space between checkbox and label */
+  }
+  
+  .forgotpassword {
+    color: #1da1f2; /* light blue, like in your screenshot */
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: -2rem;
+  }
+  
+  .forgotpassword:hover {
+    text-decoration: underline;
+  }
+
+  /* ForgotPassword */
+
+  #checkboxone {
+    display:block;
+  }
