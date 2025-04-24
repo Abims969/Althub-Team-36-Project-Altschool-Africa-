@@ -8,6 +8,8 @@ import SplashScreen from './components/LandingPageComponent/OnboardingScreens/Sp
 import { useState } from 'react';
 import LoginOne from './components/LandingPageComponent/OnboardingScreens/LoginOne';
 import ForgotPassword from './components/LandingPageComponent/OnboardingScreens/ForgotPassword';
+import AccountRecoveryOne from './components/LandingPageComponent/OnboardingScreens/AccountRecoveryOne';
+import AccountRecoveryTwo from './components/LandingPageComponent/OnboardingScreens/AccountRecoveryTwo';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
   <Route path="/login" element={<LoginOne />} />
   <Route path="/onboarding" element={<SignUpTwo />} />
   <Route path="/forgotpassword" element={<ForgotPassword />} />
+  <Route path="/accountrecoveryone" element={<AccountRecoveryOne />} />
+  <Route path="/accountrecoverytwo" element={<AccountRecoveryTwo/>} />
     </Routes>
     </div>
   )
