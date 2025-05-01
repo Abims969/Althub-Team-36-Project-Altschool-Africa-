@@ -10,6 +10,7 @@ import LoginOne from './components/LandingPageComponent/OnboardingScreens/LoginO
 import ForgotPassword from './components/LandingPageComponent/OnboardingScreens/ForgotPassword';
 import AccountRecoveryOne from './components/LandingPageComponent/OnboardingScreens/AccountRecoveryOne';
 import AccountRecoveryTwo from './components/LandingPageComponent/OnboardingScreens/AccountRecoveryTwo';
+import MajorRoutes from './components/LandingPageComponent/Routes.jsx/MajorRoutes';
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
      <Routes>
      <Route path="/" element={<LandingPage />} />
   <Route path="/loading" element={<SplashScreen />} />
+  <Route path="/home" element={<LandingPage />} />
+  <Route path="/routes" element={<MajorRoutes />} />
+  <Route path="/bookings" element={<LandingPage />} />
+  <Route path="/contactus" element={<LandingPage />} />
   <Route path="/signup" element={<SignUpOne />} />
   <Route path="/login" element={<LoginOne />} />
   <Route path="/onboarding" element={<SignUpTwo />} />

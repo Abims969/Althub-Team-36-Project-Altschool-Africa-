@@ -3,7 +3,7 @@ import image1 from "../../assets/images/TransitPro (1) 1.png";
 import styles from '../../styles/style.module.css';
 import { useNavigate } from "react-router-dom";
 
-function Header() {
+function Header () {
 
 const navigate=useNavigate();
 
@@ -12,6 +12,20 @@ const navigate=useNavigate();
       navigate('/loading', { state: { target } });
     };
 
+    const handleRouteNavigation = () => {
+      const target = '/routes'; // Define the target route here
+      navigate('/loading', { state: { target } });
+    }
+
+    const handleBookingsNavigation = () => {
+      const target = '/bookings'; // Define the target route here
+      navigate('/loading', { state: { target } });
+    }
+
+    const handleContactUsNavigation = () => {
+      const target = '/contactus'; // Define the target route here
+      navigate('/loading', { state: { target } });
+    }
 
   return (
     <header className="header">
@@ -19,16 +33,16 @@ const navigate=useNavigate();
         <img src={image1} alt="Transit Pro Logo" className={styles.image1} />
         <ul className={styles.ul}>
           <li>
-            <a href="#home">Home</a>
+            Home
           </li>
-          <li>
-            <a href="#routes">Routes</a>
+          <li onClick={() => handleRouteNavigation('/routes')}>
+            Routes
           </li>
-          <li>
-            <a href="#bookings">Bookings</a>
+          <li onClick={() => handleBookingsNavigation('/bookings')}>
+           Bookings
           </li>
-          <li>
-            <a href="#contactus">Contact Us</a>
+          <li onClick={() => handleContactUsNavigation('/contactus')}>
+            Contact Us
           </li>
         </ul>
 
