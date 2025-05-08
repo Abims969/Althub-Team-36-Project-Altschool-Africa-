@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import Header from "../Header";
 import SectionFour from "../SectionFour";
@@ -121,16 +122,34 @@ function MajorRoutes() {
   //     ]);
   // };
 
+=======
+import Header from "../Header"
+import SectionFour from "../SectionFour"
+import Footer from "../Footer"
+import WorldMap from "./WorldMap"
+
+function MajorRoutes() {
+>>>>>>> 76027af03bf8f67bf7c7090d244fbfde47738d37
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col min-h-screen bg-gray-100">
       <Header />
+<<<<<<< HEAD
       {/* <SearchBar search={search} setSearch={setSearch} /> */}
       <MapRoutes />
       {/* <NearbyRoutes nearbyRoutes={nearbyRoutes} /> */}
+=======
+      <main className="flex-1">
+        <WorldMap />
+      </main>
+>>>>>>> 76027af03bf8f67bf7c7090d244fbfde47738d37
       <SectionFour />
       <Footer />
     </div>
-  );
+  )
 }
 
+<<<<<<< HEAD
 export default MajorRoutes;
+=======
+export default MajorRoutes
+>>>>>>> 76027af03bf8f67bf7c7090d244fbfde47738d37

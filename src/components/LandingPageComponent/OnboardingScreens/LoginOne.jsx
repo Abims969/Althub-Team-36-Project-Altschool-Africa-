@@ -5,7 +5,11 @@ import "../../../App.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+<<<<<<< HEAD
 function LoginOne({ onComplete }) {
+=======
+function LoginOne() {
+>>>>>>> 76027af03bf8f67bf7c7090d244fbfde47738d37
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
