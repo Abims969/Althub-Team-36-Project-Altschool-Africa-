@@ -50,54 +50,56 @@ function SignUpOne() {
     setError("");
     sessionStorage.setItem("user", JSON.stringify({ fullName, email }));
     console.log("User registered:", { fullName, email });
-    navigate("/dashboard");
+    navigate("/routes"); // Updated route
   };
 
   const handleLoginRedirect = () => {
-    navigate("/routes");
+    navigate("/routes"); // Updated route
   };
 
   return (
-    <div className="onboardingcontainer">
-      <img src={image13} alt="Logo" className="logo" />
-      <form className="subcontainer" onSubmit={handleSubmit}>
-        <h1 className="headingone">Sign up</h1>
-        {error && <p className="text-red-500">{error}</p>}
-        <input
-          type="text"
-          placeholder="Full name"
-          value={fullName}
-          onChange={(e) => setFullName(e.target.value)}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-        />
-        <button className="onboardingbutton">Sign Up</button>
-        <p className="footerparagraph">
-          Already have an account?
-          <span className="footerspan">
-            <a href="#" onClick={handleLoginRedirect}>
-              Login
-            </a>
-          </span>
-        </p>
-        <img src={image14} alt="bus" className="busfooter" />
-      </form>
+    <div className="onboardingWrap">
+      <div className="onboardingcontainer">
+        <img src={image13} alt="Logo" className="logo" />
+        <form className="subcontainer" onSubmit={handleSubmit}>
+          <h1 className="headingone">Sign up</h1>
+          {error && <p className="text-red-500">{error}</p>}
+          <input
+            type="text"
+            placeholder="Full name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+          <button className="onboardingbutton">Sign Up</button>
+          <p className="footerparagraph">
+            Already have an account?
+            <span className="footerspan">
+              <a href="#" onClick={handleLoginRedirect}>
+                Login
+              </a>
+            </span>
+          </p>
+        </form>
+      </div>
+      <img src={image14} alt="bus" className="busfooter" />
     </div>
   );
 }
