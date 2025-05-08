@@ -90,7 +90,7 @@ function LoginOne({onComplete}) {
           <a href="#" onClick={handleSignUpRedirect}>Sign up</a>
         </span>
         </p>
-        <img src={image2} alt="bus" className="busfooter"/>
+        {/* <img src={image2} alt="bus" className="busfooter"/> */}
       </form>
       
     </div>

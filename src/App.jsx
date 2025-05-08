@@ -1,11 +1,10 @@
 import React from 'react';
 import LandingPage from './Pages/LandingPage';
+import Header from "./components/LandingPageComponent/Header";
 import SignUpOne from './components/LandingPageComponent/OnboardingScreens/SignUpOne';
 import { Routes, Route } from "react-router-dom";
 import SignUpTwo from './components/LandingPageComponent/OnboardingScreens/SignUpTwo';
-import CompletionLogin from './components/LandingPageComponent/OnboardingScreens/CompletionLogin';
 import SplashScreen from './components/LandingPageComponent/OnboardingScreens/SplashScreen';
-import { useState } from 'react';
 import LoginOne from './components/LandingPageComponent/OnboardingScreens/LoginOne';
 import ForgotPassword from './components/LandingPageComponent/OnboardingScreens/ForgotPassword';
 import AccountRecoveryOne from './components/LandingPageComponent/OnboardingScreens/AccountRecoveryOne';
@@ -19,7 +18,7 @@ function App() {
   return(
     <div>
      <Routes>
-     <Route path="/" element={<LandingPage />} />
+     <Route path="/" element={<LandingPage />} />     <Route path="/header" element={<Header/>} />
   <Route path="/loading" element={<SplashScreen />} />
   <Route path="/home" element={<LandingPage />} />
   <Route path="/routes" element={<MajorRoutes />} />

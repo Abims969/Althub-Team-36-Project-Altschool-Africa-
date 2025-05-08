@@ -1,11 +1,13 @@
+import mapImage from "../../../assets/images/Frame 168.png";
+import styles from "../../../styles/style.module.css";
+
 function MapRoutes() {
 
     
 
   return (
-    <div className="map">
-      <h1>Map</h1>
-      <p>This is the map component.</p>
+    <div className={styles.mapContainer}>
+   <img src={mapImage} alt="Map" className="map-image" />
     </div>
   );
 }
